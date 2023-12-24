@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let sayi1=parseInt(prompt("Birinci sayıyı giriniz.."));
+let sayi2=parseInt(prompt("İkinci sayıyı giriniz.."));
+let sum=0;
+if(sayi1===0||sayi2===0){
+
+    console.log("sonuç:0");
+}
+
+if(sayi2<0){
+sayi1=-sayi1;
+sayi2=-sayi2;
+
+}
+while(sayi2>0){
+
+    sum=sum+sayi1;
+    sayi2=sayi2-1;
+}
+
+console.log("sonuc: "+sum);
+
+
+
+  
+
+
+
+    </script>
+</body>
+</html>

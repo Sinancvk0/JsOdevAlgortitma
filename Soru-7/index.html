@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let toplam = 0;
+        let adet = 0;
+
+        while (true) {
+
+            let sayi = parseInt(prompt("Sayı giriniz ..(! 0 girdiğinizde çıkış sağlanıcaktır...  "))
+            if (sayi === 0) break;
+            if (!isNaN(sayi)) {
+
+                toplam += sayi;
+                adet++;
+            }
+        }
+
+        if (adet === 0) {
+
+            console.log("Sayı girilmedi");
+
+        }
+        else {
+
+            let ortalama = toplam / (adet + 1);
+            console.log("Girilen sayın ortalaması: " + ortalama);
+        }
+
+
+    </script>
+</body>
+
+</html>

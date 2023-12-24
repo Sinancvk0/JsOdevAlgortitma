@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let tekSayi=0;
+        let ciftSayi=0;
+
+        for(let i=0;i<20;i++){
+
+            let sayi=parseInt(prompt(i+1)+".sayı giriniz.")
+
+            if (sayi %2==0){
+                ciftSayi+=sayi;
+            }
+            else{
+
+                tekSayi+=sayi;
+            }
+        }
+
+        console.log("Tek sayıların toplamı "+tekSayi);
+        console.log("Çift sayı toplamı"+ciftSayi);
+
+    </script>
+    
+</body>
+</html>

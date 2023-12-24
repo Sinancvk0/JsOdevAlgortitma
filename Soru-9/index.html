@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let sayi1 = parseInt(prompt("1.ci sayıyı giriniz.."));
+        let sayi2 = parseInt(prompt("2.ci sayıyı giriniz.."));
+
+        let obeb = 1;
+        let enBuyuk = 1;
+        let minSayi = Math.min(sayi1, sayi2);
+
+        for (let i = 2; i <= minSayi; i++) {
+            if (sayi1 % i === 0 && sayi2 % i === 0) {
+                obeb = i;
+                if (i > enBuyuk) {
+                    enBuyuk = i;
+                }
+            }
+        }
+
+        console.log("Girilen sayıların OBEB'i: " + obeb);
+        console.log("Girilen sayıların en büyüğü: " + enBuyuk);
+
+    </script>
+
+</body>
+
+</html>

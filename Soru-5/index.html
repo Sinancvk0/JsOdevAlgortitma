@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let sayi1 = parseInt(prompt("Bölünen sayıyı  giriniz?"));
+        let sayi2 = parseInt(prompt("Bölen sayıyı giriniz"));
+
+        if (sayi2 === 0) {
+
+            console.log("Geçersiz işlem ")
+        }
+
+
+        let bolüm = 0;
+
+        let kalan = sayi1;
+
+        while (kalan >= sayi2) {
+
+            kalan = kalan - sayi2
+            bolüm++;
+        }
+
+        console.log("Kalan=" + kalan);
+        console.log("Bölüm=" + bolüm)
+
+    </script>
+
+</body>
+
+</html>
